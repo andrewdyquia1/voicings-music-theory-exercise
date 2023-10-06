@@ -49,7 +49,10 @@
     </section>
     <section class="exercise">
         <div class="exercise__container">
-            <canvas class="exercise__canvas" id="canvas" width='350px' height='308px'></canvas>
+            <div class="exercise__canvas--container">
+                <canvas class="exercise__canvas exercise__canvas--background" id="canvas__background" width='350px' height='308px'></canvas>
+                <canvas class="exercise__canvas--foreground" id="canvas__foreground" width='350px' height='308px'></canvas>
+            </div>
             <div class="exercise__container--information">
                 <div class="exercise__container--correct">pick which note comes next</div>
                 <div class="exercise__container--percent-correct"></div>

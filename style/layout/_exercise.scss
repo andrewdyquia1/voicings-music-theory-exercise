@@ -17,6 +17,22 @@
 
     &__canvas{
         background: #fff;
+
+        &--container{
+            position: relative;
+            width: 350px;
+            height: 308px;
+        }
+
+        &--background{
+            position: absolute;
+            z-index: 1;
+        }
+
+        &--foreground{
+            position: absolute;
+            z-index: 2;
+        }
     }
 
     &__container{

@@ -118,6 +118,19 @@
 .exercise__canvas {
   background: #fff;
 }
+.exercise__canvas--container {
+  position: relative;
+  width: 350px;
+  height: 308px;
+}
+.exercise__canvas--background {
+  position: absolute;
+  z-index: 1;
+}
+.exercise__canvas--foreground {
+  position: absolute;
+  z-index: 2;
+}
 .exercise__container {
   margin: 0 auto;
   width: 95%;
