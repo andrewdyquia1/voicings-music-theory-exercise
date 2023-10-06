@@ -115,21 +115,27 @@
   font-style: italic;
   font-weight: 900;
 }
-.exercise__canvas {
-  background: #fff;
-}
 .exercise__canvas--container {
   position: relative;
   width: 350px;
   height: 308px;
+  background: #fff;
+}
+.exercise__canvas--imageless {
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 .exercise__canvas--background {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 .exercise__canvas--foreground {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 .exercise__container {
   margin: 0 auto;

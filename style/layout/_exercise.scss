@@ -16,22 +16,30 @@
     }
 
     &__canvas{
-        background: #fff;
-
         &--container{
             position: relative;
             width: 350px;
             height: 308px;
+            background: #fff;
+        }
+
+        &--imageless{
+            position: absolute;
+            z-index: 1;
+            bottom: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
         }
 
         &--background{
             position: absolute;
-            z-index: 1;
+            z-index: 2;
         }
 
         &--foreground{
             position: absolute;
-            z-index: 2;
+            z-index: 3;
         }
     }
 
